@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4309AB451A37E2EB00660F4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4309AB401A37DFAA00660F4B /* Security.framework */; };
+		4309AB461A37E39300660F4B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A53EB71A30D8A4004AF0E9 /* libcrypto.a */; };
+		4309AB471A37E39300660F4B /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A53EB81A30D8A4004AF0E9 /* libssl.a */; };
 		435D00B61A30D7E20076417E /* TwilioClientKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 435D00B51A30D7E20076417E /* TwilioClientKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435D00BC1A30D7E20076417E /* TwilioClientKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D00B01A30D7E20076417E /* TwilioClientKit.framework */; };
 		435D00C31A30D7E20076417E /* TwilioClientKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 435D00C21A30D7E20076417E /* TwilioClientKitTests.m */; };
@@ -20,8 +23,6 @@
 		43A53EB31A30D837004AF0E9 /* TCDeviceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A53EAD1A30D837004AF0E9 /* TCDeviceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43A53EB41A30D837004AF0E9 /* TCPresenceEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A53EAE1A30D837004AF0E9 /* TCPresenceEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43A53EB51A30D837004AF0E9 /* TwilioClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A53EAF1A30D837004AF0E9 /* TwilioClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43A53EBA1A30D8A4004AF0E9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A53EB71A30D8A4004AF0E9 /* libcrypto.a */; };
-		43A53EBB1A30D8A4004AF0E9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A53EB81A30D8A4004AF0E9 /* libssl.a */; };
 		43A53EEC1A30D94B004AF0E9 /* disconnect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43A53EDD1A30D94B004AF0E9 /* disconnect.wav */; };
 		43A53EED1A30D94B004AF0E9 /* dtmf_0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43A53EDE1A30D94B004AF0E9 /* dtmf_0.wav */; };
 		43A53EEE1A30D94B004AF0E9 /* dtmf_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43A53EDF1A30D94B004AF0E9 /* dtmf_1.wav */; };
@@ -37,7 +38,6 @@
 		43A53EF81A30D94B004AF0E9 /* dtmf_star.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43A53EE91A30D94B004AF0E9 /* dtmf_star.wav */; };
 		43A53EF91A30D94B004AF0E9 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43A53EEA1A30D94B004AF0E9 /* incoming.wav */; };
 		43A53EFA1A30D94B004AF0E9 /* outgoing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43A53EEB1A30D94B004AF0E9 /* outgoing.wav */; };
-		43D208351A30E4C0004E1EA6 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D208341A30E4C0004E1EA6 /* libTwilioClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4309AB401A37DFAA00660F4B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4309B4A51A37EAA500660F4B /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		4309B4A71A37EABA00660F4B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		435D00B01A30D7E20076417E /* TwilioClientKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwilioClientKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		435D00B41A30D7E20076417E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435D00B51A30D7E20076417E /* TwilioClientKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwilioClientKit.h; sourceTree = "<group>"; };
@@ -93,13 +96,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4309AB461A37E39300660F4B /* libcrypto.a in Frameworks */,
+				4309AB471A37E39300660F4B /* libssl.a in Frameworks */,
+				4309AB451A37E2EB00660F4B /* Security.framework in Frameworks */,
 				439D30E81A30DE2000512C6D /* SystemConfiguration.framework in Frameworks */,
 				439D30E41A30DE1600512C6D /* CFNetwork.framework in Frameworks */,
 				439D30E21A30DE1000512C6D /* AudioToolbox.framework in Frameworks */,
 				439D30E01A30DE0B00512C6D /* AVFoundation.framework in Frameworks */,
-				43A53EBB1A30D8A4004AF0E9 /* libssl.a in Frameworks */,
-				43A53EBA1A30D8A4004AF0E9 /* libcrypto.a in Frameworks */,
-				43D208351A30E4C0004E1EA6 /* libTwilioClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +120,9 @@
 		435D00A61A30D7E20076417E = {
 			isa = PBXGroup;
 			children = (
+				4309B4A71A37EABA00660F4B /* libstdc++.dylib */,
+				4309B4A51A37EAA500660F4B /* libstdc++.6.0.9.dylib */,
+				4309AB401A37DFAA00660F4B /* Security.framework */,
 				439D30E71A30DE2000512C6D /* SystemConfiguration.framework */,
 				439D30E51A30DE1B00512C6D /* Foundation.framework */,
 				439D30E31A30DE1600512C6D /* CFNetwork.framework */,
@@ -463,24 +469,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = TwilioClientKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TwilioClientKit/Libraries",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-force_load",
 					"${SRCROOT}/${PROJECT_NAME}/Libraries/libTwilioClient.a",
 				);
+				PRELINK_LIBS = "";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_NAME = TwilioClientKit;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -491,24 +503,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_ENABLE_ASM_KEYWORD = YES;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = TwilioClientKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_NO_PIE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TwilioClientKit/Libraries",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-force_load",
 					"${SRCROOT}/${PROJECT_NAME}/Libraries/libTwilioClient.a",
 				);
+				PRELINK_LIBS = "";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
 				PRODUCT_NAME = TwilioClientKit;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
